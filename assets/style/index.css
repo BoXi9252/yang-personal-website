@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+* {
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.header-container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #808080;
+}
+
+header {
+    height: 0px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu a {
+    /* color: #fff; */
+    color: #4ca5f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+li+li {
+    margin-left: 30px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* ............................................................. */
+@media only screen and (max-width: 768px) {
+    .menu ul li {
+        font-size: 8px;
+        font-weight: 100;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    li+li {
+        margin-left: 10px;
+    }
+}
+
+/* ............................................................. */
+/* Hero Banner                                                   */
+/* ............................................................. */
+
+section.hero-banner {
+    height: 700px;
+    width: 100svw;
+    background: #808080 url("../images/herobanner.jpeg") center/ cover no-repeat;
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 背景颜色 */
+    color: #fff;
+    /* 文字颜色 */
+    text-align: center;
+}
+
+h1 {
+    /* 间距 */
+    font-size: 50px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    line-height: 1.2;
+}
+
+.button.group {
+    display: flex;
+    /* 用 Flexbox 显示为一行 */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button1 {
+    width: 160px;
+    padding: 10px 20px;
+    background-color: #3d7ee0;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+.button a {
+    padding: 12px 22px;
+    color: #f1f4f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/* ...................reponsive design for hero-banner................... */
+
+@media (max-width:600px) {
+
+    .button1 {
+        flex: 0 0 100%;
+        max-width: 35%;
+    }
+
+    .header-container h1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 25px;
+    }
+}
+
+/* ............................................................. */
+/* My resume                                                  */
+/* ............................................................. */
+
+
+.resume-container {
+    width: 100svw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6d5f3;
+}
+
+.left {
+    width: 310px;
+    height: 320px;
+    background-color: #fff;
+    position: relative;
+    /* top: 20px; */
+    /* margin-top: 31px; */
+    border-radius: 15px;
+}
+
+.left h1 {
+    color: #3f3789;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 55px 40px 40px 40px;
+}
+
+.left p {
+    color: #c87bb1;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 30px;
+    line-height: 22px;
+}
+
+.right {
+    width: 310px;
+    height: 350px;
+    background-color: #474a59;
+    position: relative;
+    box-shadow: 0 0 40px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+
+.form {
+    margin: 40px;
+    position: absolute;
+}
+
+.form label {
+    color: #aed1ee;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.form span {
+    font-weight: 900;
+}
+
+/* .....................social-icons............................ */
+.fa-brands {
+    font-size: 20px;
+    color: #aed1ee;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* .....................responsive design for Contact............................ */
+@media (max-width:768px) {
+
+    .left {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .right form{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+        .resume-container{
+            height: 450px;
+        }
+}
+
+
+/* ............................................................. */
+/* My photoes                                                 */
+/* ............................................................. */
+
+.portfolio-text-container {
+    width: 100%;
+    height: 180px;
+    background-color: #e6d5f3;
+    display: flex;
+    flex-direction: column;
+    /* 设置垂直方向排列 */
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-text-container h2,
+.portfolio-text-container p {
+    /* margin: 0; */
+    /* 重置默认的外边距，避免额外的间距 */
+    color: #4ca5f2;
+    font-weight: 600;
+}
+
+.portfolio-text-container p {
+    margin-bottom: 30px;
+}
+
+.portfolio-text-container h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100svw;
+    /* height: 50vh; */
+    align-items: center;
+    /* 弹性布局 允许换行 水平居中 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e6d5f3;
+}
+
+.card {
+    width: 310px;
+    height: 220px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    /* 设置过渡 */
+    transition: 0.35s;
+}
+
+.card .text {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    bottom: 15px;
+    right: 30px;
+    padding: 0 18px;
+}
+
+.card .text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    /* 过渡 */
+    transition: 0.5s;
+    /* 过渡延迟时间 */
+    transition-delay: 0.6s;
+}
+
+.card .text h2,
+.card .text p {
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.35s;
+}
+
+.card .text h2 {
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translate(30%, 0%);
+    transition-delay: 0.3s;
+}
+
+.card .text h2 span {
+    font-weight: 800;
+}
+
+.card .text p {
+    font-weight: 500;
+    transform: translate(0%, 30%);
+}
+
+/* 悬停样式开始 */
+.card:hover img {
+    opacity: 0.3;
+}
+
+.card:hover .text h2 {
+    opacity: 1;
+    transform: translate(0%, 0%);
+    transition-delay: 0.4s;
+}
+
+.card:hover .text p {
+    opacity: 0.9;
+    transform: translate(0%, 0%);
+    transition-delay: 0.6s;
+}
+
+.card:hover .text::before {
+    background-color: rgba(255, 255, 255, 0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
+
+
+/* ............................................................. */
+/* footer                                                */
+/* ............................................................. */
+
+.footer-container {
+    width: 100%;
+    height: 200px;
+    background-color: #e6d5f3;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footer-container p {
+    color: #4ca5f2;
+    font-size: 15px;
+    font-weight: 600;
+}
+
