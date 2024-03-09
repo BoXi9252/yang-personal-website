@@ -240,13 +240,14 @@ h1 {
         max-width: 100%;
     }
 
-    .right form{
+    .right form {
         flex: 0 0 100%;
         max-width: 100%;
     }
-        .resume-container{
-            height: 450px;
-        }
+
+    .resume-container {
+        height: 450px;
+    }
 }
 
 
@@ -360,7 +361,7 @@ h1 {
     transform: translate(0%, 30%);
 }
 
-/* 悬停样式开始 */
+/* 悬停样式开始 hover animation*/
 .card:hover img {
     opacity: 0.3;
 }
@@ -407,4 +408,3 @@ h1 {
     font-size: 15px;
     font-weight: 600;
 }
-
